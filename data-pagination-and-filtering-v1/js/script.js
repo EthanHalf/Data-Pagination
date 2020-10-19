@@ -20,18 +20,17 @@ This function will create and insert/append the elements needed to display a "pa
 function showPage(list, page) {
    // create two variables which will represent the index for the first and last student on the page
    let startIndex = (page. * itemsPerPage) - itemsPerPage
-
    let endIndex = page. * itemsPerPage
    // select the element with a class of `student-list` and assign it to a variable
    let studentList = document.querySelector('student-list')
    // set the innerHTML property of the variable you just created to an empty string
-   const content = element.innerHTML('');
+   studentList.innerHTML('');
    // loop over the length of the `list` parameter
    for (let i = 0; i < studentList.length; i++) {
    // inside the loop create a conditional to display the proper students
       if (i >= startIndex && i <= endIndex) {
        // inside the conditional:
-       let studentItem =  
+       let studentItem = document.createElement('li')
        /* 
        Dom Elements needed to display student at index, create elements using template literal. 
        Use bracket notation to access the student object at that index and 
