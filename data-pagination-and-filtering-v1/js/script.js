@@ -62,7 +62,7 @@ function addPagination(list) {
    // set the innerHTML property of the variable you just created to an empty string
    linkList.innerHTML = '';
    // loop over the number of pages needed
-   for (let i = 0;i <= numOfPages; i++) {
+   for (let i = 1;i <= numOfPages; i++) {
  // create the elements needed to display the pagination button
    let button = `
  <li>
@@ -80,7 +80,7 @@ function addPagination(list) {
          // remove the "active" class from the previous button
          document.querySelector('active')
           //set className to an empty string
-          active.className =''; 
+          chosen.className =''; 
           // add the active class to the clicked button
           chosen.className = 'active';
           // call the showPage function passing the `list` parameter and page to display as arguments
