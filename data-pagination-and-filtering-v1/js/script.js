@@ -48,9 +48,15 @@ function showPage(list, page) {
         </li>`;
          studentList.insertAdjacentHTML("beforeend", studentItem);
          // insert the above elements
+         
       }
-   }   
+   }
+      
+     
  }
+ 
+
+
 /*
 Create the `addPagination` function
 This function will create and insert/append the elements needed for the pagination buttons
@@ -85,12 +91,20 @@ function addPagination(list) {
           chosen.className = 'active';
          
          showPage(list, chosen.textContent);
+         
+   
       }
    });
-   }   
+   
+
+   }
+     
      // if the click target is a button:
        // remove the "active" class from the previous button
-       // add the active class to the clicked button      // call the showPage function passing the `list` parameter and page to display as arguments
+       // add the active class to the clicked button
+       // call the showPage function passing the `list` parameter and page to display as arguments
+ }
+
 
 // Call functions
 showPage(data, 1);
