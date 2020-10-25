@@ -78,9 +78,9 @@ function addPagination(list) {
       let chosen = e.target;
       if (chosen.tagName === 'BUTTON') {
          // remove the "active" class from the previous button
-         document.querySelector('active')
+         let active = document.querySelector('.active')
           //set className to an empty string
-          chosen.className =''; 
+          active.className =''; 
           // add the active class to the clicked button
           chosen.className = 'active';
           // call the showPage function passing the `list` parameter and page to display as arguments
